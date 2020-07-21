@@ -35,8 +35,10 @@ Passo 3: (consultado site https://docs.docker.com/engine/install/fedora/)
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 Passo 4:
 	[user@fedora ~]$ sudo -i
-	[sudo] senha para user
+	[sudo] senha para user:
 	[root@fedora ~]# git clone https://github.com/mapasculturais/mapasculturais-base-project.git plataforma
+	ou
+	[root@fedora ~]# git clone https://github.com/mapasculturais/mapasculturais-aldirblanc plataforma
 	[root@fedora ~]# cd ~/plataforma
 	[root@fedora ~]# git remote set-url origin https://github.com/edsongs/plataforma
 	[root@fedora ~]# git push
