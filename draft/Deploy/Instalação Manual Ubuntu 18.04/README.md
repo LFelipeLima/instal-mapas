@@ -514,3 +514,4 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   ##### Prontinho!! Após o procedimento você deverá ser capaz de acessar a página de autenticação utilizando MultipleLocalAuth
   
   
+_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_

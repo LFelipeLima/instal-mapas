@@ -180,3 +180,5 @@ ubuntu@server# sudo docker-compose -f docker-compose.prod.yml build
 ubuntu@server# sudo docker-compose -f docker-compose.prod.yml restart mapasculturais
 ```
 
+_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_
+
