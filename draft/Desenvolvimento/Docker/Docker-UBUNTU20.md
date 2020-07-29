@@ -1,3 +1,4 @@
+```
 edson@docker:~$ sudo -i
 root@docker:~# apt update
 root@docker:~# apt install git
@@ -30,3 +31,4 @@ edson@docker:~$ sudo ./start-dev.sh
 
 edson@docker:~$ docker-compose -f docker-compose.dev.yml build
 edson@docker:~$ docker-compose -f docker-compose.dev.yml up
+```
