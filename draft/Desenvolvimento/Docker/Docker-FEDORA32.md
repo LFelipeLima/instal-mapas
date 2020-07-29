@@ -1,3 +1,4 @@
+```
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 Passo 1:
 	[root@fedora ~]# yum update -y
@@ -44,3 +45,4 @@ Passo 4:
 	[root@fedora ~]# git push
 	[root@fedora ~]# cd dev-scripts
 	[root@fedora ~]# ./start-dev-sh
+```
