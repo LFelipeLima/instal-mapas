@@ -438,7 +438,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   mapas@server$
   ```
   
-  ##### Agora, Faça a edição do arquivo de configuração do mapas utilizando vi ou o editor de sua preferência.
+  ##### Agora, Faça a edição do arquivo de configuração do mapas (criado no passo 5) utilizando vi ou o editor de sua preferência.
   
   ```
   ubuntu@server$ sudo vi /srv/mapas/mapasculturais/src/protected/application/conf/config.php
@@ -446,9 +446,9 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   
   _Neste momento teremos três etapas_
   
-  1- Ativar o plugin
-  2- Configurar MultipleLocalAuth como seu Provider de autenticação
-  3- Configurar as chaves das redes sociais
+  1. Ativar o plugin
+  2. Configurar MultipleLocalAuth como seu Provider de autenticação
+  3. Configurar as chaves das redes sociais
   
   ### 1- Ativar o plugin
   
@@ -476,7 +476,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   
   ### 3- Configurar as chaves das redes sociais
   
-  ##### Defina a configuração auth.config para definir as estratégias utilizadas e as chaves dos serviços:
+  ##### Adicione a configuração auth.config para definir as estratégias utilizadas e as chaves dos serviços:
   
   ```
   'auth.config' => array(
@@ -510,7 +510,13 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   ),
   ```
   
-  _Nota: Em nosso projeto utilizamos apenas a autenticação Padrão e Google, portanto foi necessário gerar as chaves utilizando a ferramenta [Google Console Developers](https://console.developers.google.com/apis/credentials), após gerar as chaves basta adiciona-las na configurações citadas acima._  
+  _Nota: 
+  1. Em nosso projeto utilizamos apenas a autenticação **Padrão** e **Google**;
+  2. Para obter as chaves para a estratégia **"Google"**, consulte [Google Console Developers](https://console.developers.google.com/apis/credentials), após gerar as chaves basta adiciona-las na configurações citadas acima;
+  3. Para obter as chaves para a estratégia **"Facebook"**, consulte [aqui](http://facebook.com), após gerar as chaves basta adiciona-las na configurações citadas acima;
+  4. Para obter as chaves para a estratégia **"LinkedIn"**, consulte [aqui](http://linkedin.com), após gerar as chaves basta adiciona-las na configurações citadas acima;
+  5. Para obter as chaves para a estratégia **"Twitter"**, consulte [aqui](http://twitter.com), após gerar as chaves basta adiciona-las na configurações citadas acima.
+  _  
   
   
   ##### Prontinho!! Após o procedimento você deverá ser capaz de acessar a página de autenticação utilizando MultipleLocalAuth
