@@ -65,14 +65,14 @@
   #### O Docker agora deve ser instalado, o daemon iniciado e o processo ativado para iniciar na inicialização. Verifique se ele está sendo executado:
   
   ```
-  ubuntu@server$ sudo systemctl status docker
+  ubuntu@server$ docker --version
   output: Docker version 19.03.12, build 48a66213fe
   ```
   
   #### Conferindo a versão do docker instalado:
   
   ```
-  ubuntu@server$ docker --version
+  ubuntu@server$ sudo systemctl status docker
   ```
   
   #### A saída deve ser semelhante à seguinte, mostrando que o serviço está ativo e executando:
@@ -100,7 +100,7 @@
   
   
   ```
-  ubuntu@server$ docker run hello-world
+  ubuntu@server$ sudo docker run hello-world
   ```
   
   #### A saída irá indicar que o Docker está funcionando corretamente:
