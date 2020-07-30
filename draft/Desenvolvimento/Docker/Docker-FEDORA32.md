@@ -1,13 +1,19 @@
-```
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-Passo 1:
-	[root@fedora ~]# yum update -y
-    [root@fedora ~]# yum install git -y
+# Instalação DOCKER para **FEdora32** e **CENTOS7**
 
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-Testar com a receita em https://fedoramagazine.org/docker-and-fedora-32/
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-Passo 2: (consultado https://computingforgeeks.com/how-to-install-docker-on-fedora/)
+## Passo 1: Atualização inicial
+```
+    [root@fedora ~]# yum update -y
+    [root@fedora ~]# yum install git -y
+```
+
+>*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+>**Obs.:** Testar com a receita em https://fedoramagazine.org/docker-and-fedora-32/
+
+>*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+## Passo 2: Instalação do Docker (consultado https://computingforgeeks.com/how-to-install-docker-on-fedora/)
+```
     [root@fedora ~]# dnf remove docker docker-client docker-client-latest docker-common docker-latest	\
                  	 docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
     [root@fedora ~]# dnf -y install dnf-plugins-core
@@ -27,15 +33,15 @@ EOF
 	[root@fedora ~]# vi /etc/firewalld/firewalld.conf
 FirewallBackend=iptables
 	[root@fedora ~]# systemctl restart firewalld.service
-	
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-Passo 3: (consultado site https://docs.docker.com/engine/install/fedora/)
+```
+## Passo 3: Ajustes no "cgroup" (consultado site https://docs.docker.com/engine/install/fedora/)
+```
 	[root@fedora ~]# grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 	[root@fedora ~]# reboot
-
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-Passo 4:
-	[user@fedora ~]$ sudo -i
+```
+## Passo 4: Clonagem do repositório
+```
+        [user@fedora ~]$ sudo -i
 	[sudo] senha para user:
 	[root@fedora ~]# git clone https://github.com/mapasculturais/mapasculturais-base-project.git plataforma
 	ou
@@ -43,6 +49,9 @@ Passo 4:
 	[root@fedora ~]# cd ~/plataforma
 	[root@fedora ~]# git remote set-url origin https://github.com/edsongs/plataforma
 	[root@fedora ~]# git push
+```
+## Passo 5: Executando o ambiente da Plataforma
+```	
 	[root@fedora ~]# cd dev-scripts
 	[root@fedora ~]# ./start-dev-sh
 ```
