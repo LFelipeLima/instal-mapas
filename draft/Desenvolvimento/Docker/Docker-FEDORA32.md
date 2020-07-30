@@ -8,12 +8,11 @@
 
 >*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
->**Obs.:** Testar com a receita em https://fedoramagazine.org/docker-and-fedora-32/
+>**Obs.:** _Testar com [esta](https://fedoramagazine.org/docker-and-fedora-32/) receita._
 
 >*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-## Passo 2: Instalação do Docker 
-(consultado https://computingforgeeks.com/how-to-install-docker-on-fedora/)
+## Passo 2: Instalação do Docker ([consultado](https://computingforgeeks.com/how-to-install-docker-on-fedora/))
 ```
     [root@fedora ~]# dnf remove docker docker-client docker-client-latest docker-common docker-latest	\
                  	 docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
@@ -35,8 +34,7 @@ EOF
 FirewallBackend=iptables
 	[root@fedora ~]# systemctl restart firewalld.service
 ```
-## Passo 3: Ajustes no "cgroup"
-(consultado site https://docs.docker.com/engine/install/fedora/)
+## Passo 3: Ajustes no "cgroup" ([consultado](https://docs.docker.com/engine/install/fedora/))
 ```
 	[root@fedora ~]# grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 	[root@fedora ~]# reboot
