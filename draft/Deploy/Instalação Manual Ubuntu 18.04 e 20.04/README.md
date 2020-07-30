@@ -510,17 +510,17 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   ),
   ```
   
-  _Nota: 
+##### **Nota:**
   1. Em nosso projeto utilizamos apenas a autenticação **Padrão** e **Google**;
   2. Para obter as chaves para a estratégia **"Google"**, consulte [Google Console Developers](https://console.developers.google.com/apis/credentials), após gerar as chaves basta adiciona-las na configurações citadas acima;
   3. Para obter as chaves para a estratégia **"Facebook"**, consulte [aqui](http://facebook.com), após gerar as chaves basta adiciona-las na configurações citadas acima;
   4. Para obter as chaves para a estratégia **"LinkedIn"**, consulte [aqui](http://linkedin.com), após gerar as chaves basta adiciona-las na configurações citadas acima;
   5. Para obter as chaves para a estratégia **"Twitter"**, consulte [aqui](http://twitter.com), após gerar as chaves basta adiciona-las na configurações citadas acima.
-  _  
+
   
   
   ##### Prontinho!! Após o procedimento você deverá ser capaz de acessar a página de autenticação utilizando MultipleLocalAuth
 
 [Voltar para o sumário](https://github.com/edsongs/instal-mapas)
   
-_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_
+_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/) & [Edson Gellert Schubert](https://github.com/edsongs/)_
