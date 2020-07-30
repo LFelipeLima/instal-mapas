@@ -1,6 +1,6 @@
 [Voltar para o sumário](https://github.com/edsongs/instal-mapas)
 
-# Instalação Mapas Culturais - Instalação Docker Ubuntu 18.04
+# Instalação Mapas Culturais - Instalação Docker Ubuntu 18.04 e 20.04
 
   ## 1- Instalando o Docker
   
