@@ -1,4 +1,4 @@
-# Instalação DOCKER para **FEdora32** e **CENTOS7**
+# Instalação DOCKER para **Fedora32** e **Centos7**
 
 ## Passo 1: Atualização inicial
 ```
@@ -12,7 +12,8 @@
 
 >*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-## Passo 2: Instalação do Docker (consultado https://computingforgeeks.com/how-to-install-docker-on-fedora/)
+## Passo 2: Instalação do Docker 
+(consultado https://computingforgeeks.com/how-to-install-docker-on-fedora/)
 ```
     [root@fedora ~]# dnf remove docker docker-client docker-client-latest docker-common docker-latest	\
                  	 docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
@@ -34,7 +35,8 @@ EOF
 FirewallBackend=iptables
 	[root@fedora ~]# systemctl restart firewalld.service
 ```
-## Passo 3: Ajustes no "cgroup" (consultado site https://docs.docker.com/engine/install/fedora/)
+## Passo 3: Ajustes no "cgroup"
+(consultado site https://docs.docker.com/engine/install/fedora/)
 ```
 	[root@fedora ~]# grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 	[root@fedora ~]# reboot
