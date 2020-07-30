@@ -1,3 +1,5 @@
+[Voltar para o sumário](https://github.com/edsongs/instal-mapas)
+
 # Mapas Culturais Minas Gerais - Instalação Manual Ubuntu 18.04
 
 Este repositório irá armazenar as configurações necessárias para efetuas a instalaçao passo-a-passo da aplicação mapasculturais tendo como base esta [documentação](http://docs.mapasculturais.org/mc_deploy/), em Minas Gerais tivemos que fazer algumas mudanças do tutorial original para que fosse possível a sua instalaçao.
@@ -512,6 +514,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   
   
   ##### Prontinho!! Após o procedimento você deverá ser capaz de acessar a página de autenticação utilizando MultipleLocalAuth
-  
+
+[Voltar para o sumário](https://github.com/edsongs/instal-mapas)
   
 _Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_

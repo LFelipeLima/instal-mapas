@@ -1,3 +1,5 @@
+[Voltar para o sumário](https://github.com/edsongs/instal-mapas)
+
 # Instalação Mapas Culturais - Requisitos Mínimos
 
 Essa documentação tem como objetivo dar uma ideia de qual deve ser a configuração do Hardware para a utilização do Mapas Culturais. Teremos duas situações possíveis:
@@ -50,5 +52,6 @@ _A **recomendação** é dobrar a configuração para suportar o mapas + Lei Ald
 
 _**Nota Importante:** Por conta dos editais é esperado que o espaço utilizado cresça indefinidamente a medida que novos editais são colocados na plataforma mesmo que não cresça o número de agentes e espaços cadastrados na plataforma, uma vez que sempre são requisitados novos anexos nas fichas de inscrição_
 
+[Voltar para o sumário](https://github.com/edsongs/instal-mapas)
 
 _Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_
