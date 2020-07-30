@@ -57,3 +57,5 @@ FirewallBackend=iptables
 	[root@fedora ~]# cd dev-scripts
 	[root@fedora ~]# ./start-dev-sh
 ```
+
+_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/) & [Edson Gellert Schubert](https://github.com/edsongs/)_

@@ -61,3 +61,5 @@ user@docker:~$ docker-compose -f docker-compose.dev.yml up
 user@docker:~$ git remote set-url origin https://github.com/<user>/mapasculturais
 user@docker:~$ git push
 ```
+
+_Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/) & [Edson Gellert Schubert](https://github.com/edsongs/)_
