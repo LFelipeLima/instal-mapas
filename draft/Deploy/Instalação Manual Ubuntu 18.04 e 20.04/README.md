@@ -11,76 +11,76 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   #### Atualize os repositórios de referência de sua máquina:
   
   ```
-  ubuntu@server# sudo apt-get update 
+  ubuntu@server$ sudo apt-get update 
   ```
   ```
-  ubuntu@server# sudo apt-get upgrade
+  ubuntu@server$ sudo apt-get upgrade
   ```
   
   #### Instale as dependências diversas:
   
   ```
-  ubuntu@server# sudo apt-get install git curl npm ruby2.5 ruby2.5-dev -y
+  ubuntu@server$ sudo apt-get install git curl npm ruby2.5 ruby2.5-dev -y
   ```
   
   ####  Atualizar referências para a versão de ruby 2.5:
   
   ```
-  ubuntu@server# sudo update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.5
+  ubuntu@server$ sudo update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.5
   ```
   ```
-  ubuntu@server# sudo update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.5
+  ubuntu@server$ sudo update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.5
   ```
   
   #### Instale a versão stable mais nova do nodejs:
   
   ```
-  ubuntu@server# sudo curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+  ubuntu@server$ sudo curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
   ```
   ```
-  ubuntu@server# sudo bash nodesource_setup.sh
+  ubuntu@server$ sudo bash nodesource_setup.sh
   ```
   ```
-  ubuntu@server# sudo apt install nodejs -y
+  ubuntu@server$ sudo apt install nodejs -y
   ```
 
   #### Verificando se foi instalada a versão mais recente do NodeJS e do NPM:
   
   ```
-  ubuntu@server# nodejs -v
+  ubuntu@server$ nodejs -v
   ~ v12.18.3
   ```
 
   ```
-  ubuntu@server# npm -v
+  ubuntu@server$ npm -v
   ~ 6.14.6
   ```
   
   ####  Instale o postgresql e postgis: 
   
   ```
-  ubuntu@server# sudo apt-get install postgresql-10 postgresql-contrib postgis postgresql-10-postgis-2.4 postgresql-10-postgis-2.4-scripts -y
+  ubuntu@server$ sudo apt-get install postgresql-10 postgresql-contrib postgis postgresql-10-postgis-2.4 postgresql-10-postgis-2.4-scripts -y
   ```
   
   ####  Instale o php7.2, php7.2-fpm e extensões do php utilizadas no sistema
   
   ``` 
-  ubuntu@server# sudo apt-get install php7.2 php7.2-gd php7.2-cli php7.2-json php7.2-curl php7.2-pgsql php-apcu php7.2-fpm imagemagick libmagickcore-dev libmagickwand-dev php7.2-imagick -y
+  ubuntu@server$ sudo apt-get install php7.2 php7.2-gd php7.2-cli php7.2-json php7.2-curl php7.2-pgsql php-apcu php7.2-fpm imagemagick libmagickcore-dev libmagickwand-dev php7.2-imagick -y
   ```
   
   #### Instale o nginx
   
   ```
-  ubuntu@server# sudo apt-get install nginx
+  ubuntu@server$ sudo apt-get install nginx
   ```
   
   #### Instale o gerenciador de dependências do PHP Composer
   
   ```
-  ubuntu@server# curl -sS https://getcomposer.org/installer | php
+  ubuntu@server$ curl -sS https://getcomposer.org/installer | php
   ```
   ```
-  ubuntu@server# sudo mv composer.phar /usr/local/bin/composer.phar
+  ubuntu@server$ sudo mv composer.phar /usr/local/bin/composer.phar
   ```
   
   #### Também é importante ter o pacote zip instalado no seu servidor. Ele é usado para gerar o pacote com os anexos enviados nas inscrições. Caso ainda não tenha:
@@ -92,32 +92,32 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   #### No Ubuntu o executável do NodeJS se chama nodejs, porém para o correto funcionamento das bibliotecas utilizadas, o executável deve se chamar node. Para isto criamos um link simbólico com o comando abaixo:
   
   ```
-  ubuntu@server# sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+  ubuntu@server$ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
   ```
   #### Instalando os minificadores de código Javascript e CSS: uglify-js, uglifycss e autoprefixer:
   
   ```
-  ubuntu@server# sudo npm install -g uglify-js2 uglifycss autoprefixer
-  ubuntu@server# sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
+  ubuntu@server$ sudo npm install -g uglify-js2 uglifycss autoprefixer
+  ubuntu@server$ sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
   ```
   
   #### Instalando o SASS, utilizado para compilar os arquivos CSS:
   
   ```
-  ubuntu@server# sudo gem install sass -v 3.4.22
+  ubuntu@server$ sudo gem install sass -v 3.4.22
   ```
 # 3. Clonando o Repositório
 
   #### Primeiro vamos criar o usuário que rodará a aplicação e que será proprietário do banco de dados, definindo sua home para /srv e colocando-o no grupo www-data:
   
   ```
-  ubuntu@server# sudo useradd -G www-data -d /srv/mapas -m mapas
+  ubuntu@server$ sudo useradd -G www-data -d /srv/mapas -m mapas
   ```
   
   #### Vamos clonar o repositório usando o usuário criando, então precisamos primeiro "logar" com este usuário:
   
   ```
-  ubuntu@server# sudo su - mapas
+  ubuntu@server$ sudo su - mapas
   mapas@server$ git clone https://github.com/hacklabr/mapasculturais.git
   ```
   #### Agora vamos colocar o repositório na branch master. Caso queira você poderá ver todas as versões dosponíveis [aqui](https://github.com/hacklabr/mapasculturais/releases)
@@ -147,25 +147,25 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   #### Primeiro vamos criar o usuário no banco de dados com o mesmo nome do usuário do sistema
   
   ```
-  ubuntu@server# sudo -u postgres psql -c "CREATE USER mapas"
+  ubuntu@server$ sudo -u postgres psql -c "CREATE USER mapas"
   ```
   
   #### Agora vamos criar a base de dados para a aplicação com o mesmo nome do usuário
   
   ```
-  ubuntu@server# sudo -u postgres createdb --owner mapas mapas
+  ubuntu@server$ sudo -u postgres createdb --owner mapas mapas
   ```
   #### Criar as extensões necessárias no banco
   
   ```
-  ubuntu@server# sudo -u postgres psql -d mapas -c "CREATE EXTENSION postgis;"
-  ubuntu@server# sudo -u postgres psql -d mapas -c "CREATE EXTENSION unaccent;"
+  ubuntu@server$ sudo -u postgres psql -d mapas -c "CREATE EXTENSION postgis;"
+  ubuntu@server$ sudo -u postgres psql -d mapas -c "CREATE EXTENSION unaccent;"
   ```
   
   #### Volte a "logar" com o usuário criado e importar o esquema da base de dados
   
   ```
-  ubuntu@server# sudo su - mapas
+  ubuntu@server$ sudo su - mapas
   mapas@server$ psql -f mapasculturais/db/schema.sql
   ```
 # 5. Configurações de instalação
@@ -180,14 +180,14 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   
   ```
   $ exit
-  ubuntu@server# sudo mkdir /var/log/mapasculturais
-  ubuntu@server# sudo chown mapas:www-data /var/log/mapasculturais
+  ubuntu@server$ sudo mkdir /var/log/mapasculturais
+  ubuntu@server$ sudo chown mapas:www-data /var/log/mapasculturais
   ```
   
   #### Com o usuário criado, crie a pasta para os assets, para os uploads e para os uploads privados (arquivos protegidos, como anexos de inscrições em oportunidades):
   
   ```
-  ubuntu@server# sudo su - mapas
+  ubuntu@server$ sudo su - mapas
   mapas@server$ mkdir mapasculturais/src/assets
   mapas@server$ mkdir mapasculturais/src/files
   mapas@server$ mkdir mapasculturais/private-files
@@ -199,7 +199,7 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   
   ```
   mapas@server$ exit
-  ubuntu@server# sudo vi /etc/nginx/sites-available/mapas.conf
+  ubuntu@server$ sudo vi /etc/nginx/sites-available/mapas.conf
   ```
   
   _Eu costumo utilizar o vi, mas você pode usar o vim, nano e afins para fazer a edição deste arquivo_
@@ -255,20 +255,20 @@ Este repositório irá armazenar as configurações necessárias para efetuas a 
   #### Crie o link para habilitar o virtual host
   
   ```
-  ubuntu@server# sudo ln -s /etc/nginx/sites-available/mapas.conf /etc/nginx/sites-enabled/mapas.conf
+  ubuntu@server$ sudo ln -s /etc/nginx/sites-available/mapas.conf /etc/nginx/sites-enabled/mapas.conf
   ```
   
   #### Remover o arquivo default da pasta /etc/nginx/sites-available/ e /etc/nginx/sites-enabled/
   
   ```
-  ubuntu@server# sudo rm /etc/nginx/sites-available/default
-  ubuntu@server# sudo rm /etc/nginx/sites-enabled/default
+  ubuntu@server$ sudo rm /etc/nginx/sites-available/default
+  ubuntu@server$ sudo rm /etc/nginx/sites-enabled/default
   ```
   
   #### Configurações pool do php7.2-fpm: Crie o arquivo ```/etc/php/7.2/fpm/pool.d/mapas.conf```. Muita atenção na alteração da linha ```listen = /var/run/php/php7.2-fpm-meu.dominio.gov.br.sock``` pois o nome do arquivo .sock precisará ser extamente como foi configurado do arquivo ```/etc/nginx/sites-available/mapas.conf```. O diretório ```/var/run/php/``` podrá mudar dependendo da versão que estiver trabalhando. 
   
   ```
-  ubuntu@server# sudo vi /etc/php/7.2/fpm/pool.d/mapas.conf
+  ubuntu@server$ sudo vi /etc/php/7.2/fpm/pool.d/mapas.conf
   ```
   
   _Eu costumo utilizar o vi, mas você pode usar o vim, nano e afins para fazer a edição deste arquivo_
@@ -301,7 +301,7 @@ php_admin_value[display_errors] = 'stderr'
   
   
   ```
-  ubuntu@server# sudo su - mapas
+  ubuntu@server$ sudo su - mapas
   mapas@server$ psql -f mapasculturais/db/initial-data.sql
   mapas@server$ ./mapasculturais/scripts/deploy.sh
   ```
@@ -310,8 +310,8 @@ php_admin_value[display_errors] = 'stderr'
   
   
   ```
-  ubuntu@server# sudo service nginx restart
-  ubuntu@server# sudo service php7.2-fpm restart
+  ubuntu@server$ sudo service nginx restart
+  ubuntu@server$ sudo service php7.2-fpm restart
   ```
  
 _A partir deste momento sua aplicação estará disponível para acesso utilizando a Autenticação Fake_
@@ -324,18 +324,18 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   #### Primeiro, adicione o repositório:
 
   ```
-  ubuntu@server# sudo add-apt-repository ppa:certbot/certbot
+  ubuntu@server$ sudo add-apt-repository ppa:certbot/certbot
   ```
 
   #### Você vai precisar pressionar ENTER para aceitar. Depois, atualize a lista de pacotes para pegar as novas informações de pacotes do repositório:
 
   ```
-  ubuntu@server# sudo apt-get update
+  ubuntu@server$ sudo apt-get update
   ```
   #### E, finalmente, instale o pacote Nginx do Certbot com o apt-get:
 
   ```
-  ubuntu@server# sudo apt-get install python-certbot-nginx
+  ubuntu@server$ sudo apt-get install python-certbot-nginx
   ```
   
   
@@ -344,7 +344,7 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   #### Para verificar, abra o arquivo de bloco do servidor para o seu domínio usando o ```vi``` ou o seu editor de textos favorito:
   
   ```
-  ubuntu@server# sudo vi /etc/nginx/sites-available/mapas.conf
+  ubuntu@server$ sudo vi /etc/nginx/sites-available/mapas.conf
   ```
   
   #### Verifique se todas as informações abaixo foram configuradas corretamente, já fizemos nas [etapas anteriores](https://github.com/wiusmarques/mapasculturais#6-configura%C3%A7%C3%A3o-do-nginx), iremos apenas conferir.
@@ -359,13 +359,13 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   #### Depois de conferir o arquivo, saia do seu editor, e verifique a sintaxe da edição da sua configuração:
   
   ```
-  ubuntu@server# sudo nginx -t
+  ubuntu@server$ sudo nginx -t
   ```
   
   #### Se você receber um erro, reabra o arquivo de bloco do servidor e verifique se há erros de digitação ou caracteres ausentes. Quando a sintaxe do seu arquivo de configuração estiver correta, recarregue o Nginx para carregar a nova configuração:
   
   ```
-  ubuntu@server# sudo systemctl reload nginx
+  ubuntu@server$ sudo systemctl reload nginx
   ```
   
   ## Passo 3 — Permitindo HTTPS Através do Firewall
@@ -377,7 +377,7 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   #### Obtendo o certificado
   
   ```
-  ubuntu@server# sudo certbot --nginx -d meu.dominio.gov.br
+  ubuntu@server$ sudo certbot --nginx -d meu.dominio.gov.br
   ```
   
   #### Se isso for bem sucedido, o certbot perguntará como você gostaria de definir suas configurações de HTTPS.
@@ -405,7 +405,7 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   ## Passo 5 — Verificando a Auto-Renovação do Certbot
   
   ```
-  ubuntu@server# sudo certbot renew --dry-run
+  ubuntu@server$ sudo certbot renew --dry-run
   ```
   
   
@@ -422,7 +422,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   #### Clonando o repositório, iremos acessar a pasta ```plugins``` do nosso projeto utilizando o usuário mapas
   
   ```
-  ubuntu@server# sudo su - mapas
+  ubuntu@server$ sudo su - mapas
   mapas@server$ cd mapasculturais/src/protected/application/plugins
   mapas@server$ pwd
     output: /srv/mapas/mapasculturais/src/protected/application/plugins
@@ -439,7 +439,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   ##### Agora, Faça a edição do arquivo de configuração do mapas utilizando vi ou o editor de sua preferência.
   
   ```
-  ubuntu@server# sudo vi /srv/mapas/mapasculturais/src/protected/application/conf/config.php
+  ubuntu@server$ sudo vi /srv/mapas/mapasculturais/src/protected/application/conf/config.php
   ```
   
   _Neste momento teremos três etapas_

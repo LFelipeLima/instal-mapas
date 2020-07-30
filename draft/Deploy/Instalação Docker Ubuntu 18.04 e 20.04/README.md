@@ -5,72 +5,72 @@
   #### Atualize os repositórios de referência de sua máquina:
   
   ```
-  ubuntu@server# sudo apt-get update -y
+  ubuntu@server$ sudo apt-get update -y
   ```
   ```
-  ubuntu@server# sudo apt-get upgrade -y
+  ubuntu@server$ sudo apt-get upgrade -y
   ````
   
   #### Instalação de pacotes que serão utilizados:
   
   ```
-  ubuntu@server# sudo apt-get install curl git -y
+  ubuntu@server$ sudo apt-get install curl git -y
   ```
   
   #### Em seguida, instale alguns pacotes de pré-requisitos que permitem que o apt utilize pacotes via HTTPS:
   
   ```
-  ubuntu@server# sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+  ubuntu@server$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
   ```
   
   
   #### Então adicione a chave GPG para o repositório oficial do Docker em seu sistema:
   
   ```
-  ubuntu@server# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  ubuntu@server$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   ```
   #### Adicione o repositório do Docker às fontes do APT:
   
   ```
-  ubuntu@server# sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y
+  ubuntu@server$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y
   ```
   
   #### Atualize novamente os repositórios de referência de sua máquina:
   
   ```
-  ubuntu@server# sudo apt-get update -y
+  ubuntu@server$ sudo apt-get update -y
   ```
   
   #### Certifique-se de que você irá instalar a partir do repositório do Docker em vez do repositório padrão do Ubuntu:
   
   ```
-  ubuntu@server# sudo apt-cache policy docker-ce
+  ubuntu@server$ sudo apt-cache policy docker-ce
   ```
   
   #### Finalmente, instale o Docker:
   
   ```
-  ubuntu@server# sudo apt-get install docker-ce -y
+  ubuntu@server$ sudo apt-get install docker-ce -y
   ```
   
   #### Iremos habilitar o serviço e criar o link:
   
   ```
-  ubuntu@server# sudo systemctl start docker
-  ubuntu@server# sudo systemctl enable docker
+  ubuntu@server$ sudo systemctl start docker
+  ubuntu@server$ sudo systemctl enable docker
   ```
   
   #### O Docker agora deve ser instalado, o daemon iniciado e o processo ativado para iniciar na inicialização. Verifique se ele está sendo executado:
   
   ```
-  ubuntu@server# sudo systemctl status docker
+  ubuntu@server$ sudo systemctl status docker
   output: Docker version 19.03.12, build 48a66213fe
   ```
   
   #### Conferindo a versão do docker instalado:
   
   ```
-  ubuntu@server# docker --version
+  ubuntu@server$ docker --version
   ```
   
   #### A saída deve ser semelhante à seguinte, mostrando que o serviço está ativo e executando:
@@ -98,7 +98,7 @@
   
   
   ```
-  ubuntu@server# docker run hello-world
+  ubuntu@server$ docker run hello-world
   ```
   
   #### A saída irá indicar que o Docker está funcionando corretamente:
@@ -118,26 +118,26 @@
   #### Instalando Docker composer:
   
   ```
-  ubuntu@server#  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  ubuntu@server$  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
   ```
   
   #### Atribuindo a permissão necesária:
   
   ```
-  ubuntu@server#  sudo chmod +x /usr/local/bin/docker-compose
+  ubuntu@server$  sudo chmod +x /usr/local/bin/docker-compose
   ```
   
   #### Verificado se foi instalado corretamente:
   
   ```
-  ubuntu@server# sudo docker-compose -version
+  ubuntu@server$ sudo docker-compose -version
   output: docker-compose version 1.26.2, build eefe0d31
   ```
   #### Iremos clonar o repositório e acessar sua pasta
   
   ```
-  ubuntu@server# sudo git clone https://github.com/mapasculturais/mapasculturais-aldirblanc.git
-  ubuntu@server# cd mapasculturais-aldirblanc
+  ubuntu@server$ sudo git clone https://github.com/mapasculturais/mapasculturais-aldirblanc.git
+  ubuntu@server$ cd mapasculturais-aldirblanc
   ```
   
   ### Ambiete de produção:
@@ -145,13 +145,13 @@
   #### Inicializando os serviços:
   
   ```
-  ubuntu@server# sudo docker-compose -f docker-compose.prod.yml up
+  ubuntu@server$ sudo docker-compose -f docker-compose.prod.yml up
   ```
   
   #### Adicione a flag ```-d``` caso queira rodar o docker em segundo plano:
   
   ```
-  ubuntu@server# sudo docker-compose -f docker-compose.prod.yml up -d
+  ubuntu@server$ sudo docker-compose -f docker-compose.prod.yml up -d
   ```
   
   _A partir deste momento você deverá ser capaz de acessar o Mapas com o Plugin para a Lei Aldir Blanc_
@@ -161,7 +161,7 @@
   #### Para subir o ambiente de desenvolvimento basta entrar na pasta dev-scripts e rodar o script start-dev.sh.
 
   ``` 
-  ubuntu@server# meu-mapas/dev-scripts/$ sudo ./start-dev.sh 
+  ubuntu@server$ meu-mapas/dev-scripts/$ sudo ./start-dev.sh 
   ```
   _acesse no seu navegador http://localhost:8080/_
 
@@ -176,8 +176,8 @@
 #### Modifique a versão do Mapas Culturais no início do arquivo compose/production/Dockerfile e execute os comandos abaixo:
 
 ```
-ubuntu@server# sudo docker-compose -f docker-compose.prod.yml build
-ubuntu@server# sudo docker-compose -f docker-compose.prod.yml restart mapasculturais
+ubuntu@server$ sudo docker-compose -f docker-compose.prod.yml build
+ubuntu@server$ sudo docker-compose -f docker-compose.prod.yml restart mapasculturais
 ```
 
 _Autor: [Wiusmarques Moreira](https://github.com/wiusmarques/)_
