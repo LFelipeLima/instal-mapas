@@ -46,7 +46,7 @@ user@docker:~$ sudo usermod -aG docker $(whoami)
 user@docker:~$ git clone https://github.com/mapasculturais/mapasculturais-base-project.git mapa
 user@docker:~$ cd mapa/dev-scripts/
 ```
-## Passo 6: Iniciando o Ambiente de Desenvolvimento da Plataforma
+## Passo 6: Executando o Ambiente da Plataforma
 ```
 user@docker:~$ sudo ./start-dev.sh
 ```
