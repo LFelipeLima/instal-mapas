@@ -43,6 +43,10 @@ user@docker:~$ sudo usermod -aG docker $(whoami)
 ```
 ## Passo 5: Clonagem do Repositório
 ```
+user@docker:~$ git clone --branch release/v5.0.0 https://github.com/mapasculturais/mapasculturais.git
+```
+ou
+```
 user@docker:~$ git clone https://github.com/mapasculturais/mapasculturais-base-project.git mapa
 user@docker:~$ cd mapa/dev-scripts/
 ```
