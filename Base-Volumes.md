@@ -1,6 +1,6 @@
 # Documentação
 
-texto inicial
+Proposta de estruturação construída e pensada, via este [diagrama](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.pdf) de mind-mapping elaborado usando o GitMind, por [Edson Gellert Schubert](http://github.com/edsongs) e [Wiusmarques Moreira](http://github.com/wiusmarques)
 
 **Índice do Documento:**
 1. [Manual de Uso](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-de-uso)
