@@ -35,6 +35,7 @@ Este manual é pensado em concentrar todos os documentos necessários para corre
 		2. Formulário
 	4. Agente
 	5. Registro de Usuário
+	6. [Selos](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_user_seal.md#selos)
 
 ## Manual do Administrador
 Este manual é pensado em concentrar todos os documentos necessários para a administração da plataforma [Mapas Culturais](http://github.com/mapasculturais).
@@ -65,13 +66,16 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 		2. Imagens
 		3. Cores
 
-4. [Perfil de Usuário](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_user_profile.md)
+4. [Atualização de Instalação](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy_update.md#mapas-culturais--update
+)
+
+5. [Perfil de Usuário](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_user_profile.md)
 	1. Super Administrador SaaS
 	2. Administrador SaaS
 	3. Administrador
 	4. Usuário
 
-5. Administração do Ambiente
+6. Administração do Ambiente
 	1. [Subsites - SaaS](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_saas.md)
 		1. Textos
 		2. Imagens
@@ -91,7 +95,10 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 				* Regras Autenticação
 			6. Captcha
 		3. [Aldir Blanc](https://github.com/mapasculturais/plugin-AldirBlanc)
-
+	4. Configuração de Ambiente
+		1. [Temas](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy_theme.md#temas-conhecidos)
+	5. [Auditoria e Logs de Atividades](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_user_history.md#hist%C3%B3rico-das-entidades)
+	6. [Selos no ambiente do mapas culturais](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_seal.md#selos-no-ambiente-do-mapas-culturais)
 # Manual do Desenvolvedor
 Este manual é pensado em concentrar todos os documentos necessários para o desenvolvimento/programação da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 1. [API](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_api.md)
@@ -100,8 +107,20 @@ Este manual é pensado em concentrar todos os documentos necessários para o des
 2. Programação
 	1. [Personalizando montagem do endereço](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_address.md)
 	2. [Como contribuir](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_contribute.md)
-	3. [Entidades dos Mapas Culturais](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_entities.md)
-	4. [Desenvolvimento com Docker](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_docker_enviroment.md)
+	3. [Desenvolvimento com Docker](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_docker_enviroment.md)
+	4. [Entidades dos Mapas Culturais](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_entities.md)
+	[Opções de Geocoding e busca de endereço por código postal](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_geocoding.md)
+	5. [Mapas Culturais > Guia do Desenvolvedor](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_guide.md)
+	6. [Internacionalização](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_i18n.md)
+	7. [Busca por palavra-chave - via DQLs (Doctrine Query Language)](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_keywords.md)
+	8. [Fazendo um novo Release](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_releases.md)
+	9. [Testes Unitários - via Docker(Travis-CI)](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_tests.md)
+	10. [Customização do tema do Mapas Culturais](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_theme.md)
+	11. [Adicionando campos adicionais ao seu tema](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_theme_add_metadata.md)
+	12. [Personalizando as listagens da busca](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_developer_theme_infobox.md)
+	13. [Variáveis (de Ambiente) de Configuração de Temas](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_index.md#themesactive)
+	14. [SHAPEFILEs](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy_shapefiles.md#mapas-culturais--deploy--shapefiles)
+
 3. [Repositório](https://github.com/mapasculturais/mapasculturais)
 4. Extensões
 	1. Inclusão de Campos
