@@ -1,6 +1,6 @@
 # Documentação
 
-Proposta de estruturação construída e pensada, via este [diagrama](https://github.com/edsongs/instal-mapas/blob/master/DocuDiag.pdf) de mind-mapping elaborado usando o GitMind, por [Edson Gellert Schubert](http://github.com/edsongs) e [Wiusmarques Moreira](http://github.com/wiusmarques)
+Proposta de estruturação construída e pensada, via este [diagrama](https://github.com/edsongs/instal-mapas/blob/master/DocuDiag.pdf) de mind-mapping elaborado usando o GitMind.
 
 **Índice do Documento:**
 1. [Manual de Uso](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-de-uso)
@@ -103,3 +103,5 @@ Este manual é pensado em concentrar todos os documentos necessários para o des
 4. Extensões
 	1. Inclusão de Campos
 	2. Alteração de Tema
+
+Autores: [Edson Gellert Schubert](http://github.com/edsongs) e [Wiusmarques Moreira](http://github.com/wiusmarques)
