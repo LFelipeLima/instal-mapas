@@ -41,21 +41,21 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 
 1. Instalação do Ambiente
 2. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
-3. Ubuntu/Debian
-	1. Deploy
-		* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
-		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
-	2. Desevolvimento
-		* [Instalação Manual]
-		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-UBUNTU20.md)
-4. Fedora/Centos
-	1. Deploy
-		* [Instalação Manual]
-		* [Instalação com Docker]
-	2. Desevolvimento
-		* [Instalação Manual]
-		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
-2. Migração de Servidor
+	1. Ubuntu/Debian
+		1. Deploy
+			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
+		2. Desevolvimento
+			* [Instalação Manual]
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-UBUNTU20.md)
+	2. Fedora/Centos
+		1. Deploy
+			* [Instalação Manual]
+			* [Instalação com Docker]
+		2. Desevolvimento
+			* [Instalação Manual]
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
+3. Migração de Servidor
 	1. Registros
 		1. Exportação do BD
 		2. Importação BD
@@ -65,13 +65,13 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 		2. Imagens
 		3. Cores
 
-3. Perfil de Usuário
+4. Perfil de Usuário
 	1. Super Administrador SaaS
 	2. Administrador SaaS
 	3. Administrador
 	4. Usuário
 
-4. Administração do Ambiente
+5. Administração do Ambiente
 	1. Subsites
 		1. Textos
 		2. Imagens
