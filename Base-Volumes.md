@@ -10,96 +10,96 @@ texto inicial
 ## Manual de Uso
 Este manual é pensado em concentrar todos os documentos necessários para correto uso da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
-### Usuário Final
-#### Acesso
-1. Registro Inicial
-2. Confirmação de Registro
-3. Login
-#### Agente
-1. Cadastro
-2. Atualização
-3. Atribuições
-#### Espaço
-#### Projeto
-#### Evento
-1. Criação
-#### Oportunidade
-### Administrador
-#### Evento
-1. Tipo
-2. Anexos
-3. Descrição
-#### Projeto
-#### Oportunidade
-1. Tipos
-2. Formulário
-#### Agente
-#### Registro de Usuário
+1. Usuário Final
+	1. Acesso
+		1. Registro Inicial
+		2. Confirmação de Registro
+		3. Login
+	2. Agente
+		1. Cadastro
+		2. Atualização
+		3. Atribuições
+	3. Espaço
+	4. Projeto
+	5. Evento
+		1. Criação
+	6. Oportunidade
+2. Administrador
+	1. Evento
+		1. Tipo
+		2. Anexos
+		3. Descrição
+	2. Projeto
+	3. Oportunidade
+		1. Tipos
+		2. Formulário
+	4. Agente
+	5. Registro de Usuário
 
 ## Manual do Administrador
 Este manual é pensado em concentrar todos os documentos necessários para a administração da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
-## Instalação do Ambiente
-### [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
-### Ubuntu/Debian
-1. Deploy
-	* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
-	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
-2. Desevolvimento
-	* [Instalação Manual]
-	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-UBUNTU20.md)
-### Fedora/Centos
-1. Deploy
-	* [Instalação Manual]
-	* [Instalação com Docker]
-2. Desevolvimento
-	* [Instalação Manual]
-	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
-## Migração de Servidor
-### Registros
-#### Exportação do BD
-#### Importação BD
-#### Uso de API
-### Temas
-#### Textos
-#### Imagens
-#### Cores
+1. Instalação do Ambiente
+2. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
+3. Ubuntu/Debian
+	1. Deploy
+		* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
+		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
+	2. Desevolvimento
+		* [Instalação Manual]
+		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-UBUNTU20.md)
+4. Fedora/Centos
+	1. Deploy
+		* [Instalação Manual]
+		* [Instalação com Docker]
+	2. Desevolvimento
+		* [Instalação Manual]
+		* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
+2. Migração de Servidor
+	1. Registros
+		1. Exportação do BD
+		2. Importação BD
+		3. Uso de API
+	2. Temas
+		1. Textos
+		2. Imagens
+		3. Cores
 
-## Perfil de Usuário
-### Super Administrador SaaS
-### Administrador SaaS
-### Administrador
-### Usuário
+3. Perfil de Usuário
+	1. Super Administrador SaaS
+	2. Administrador SaaS
+	3. Administrador
+	4. Usuário
 
-## Administração do Ambiente
-### Subsites
-#### Textos
-#### Imagens
-#### Administradores
-#### Tema
-1. Imagens
-### Segurança
-#### Captcha
-#### Certificado
-### Plugins
-#### Mailer
-#### Autenticação
-1. Google
-2. Facebook
-3. Twitter
-4. LinkedIn
-5. Local
-	* Regras Autenticação
-6. Captcha
-#### Aldir Blanc
+4. Administração do Ambiente
+	1. Subsites
+		1. Textos
+		2. Imagens
+		3. Administradores
+		4. Tema
+			1. Imagens
+	2. Segurança
+		1. Captcha
+		2. Certificado
+	3. Plugins
+		1. Mailer
+		2. Autenticação
+			1. Google
+			2. Facebook
+			3. Twitter
+			4. LinkedIn
+			5. Local
+				* Regras Autenticação
+			6. Captcha
+		3. Aldir Blanc
 
 # Manual do Desenvolvedor
 Este manual é pensado em concentrar todos os documentos necessários para o desenvolvimento/programação da plataforma [Mapas Culturais](http://github.com/mapasculturais).
-## API
-### Dicionário Funções 
-### Exemplos de Uso
-## Programação
-## Repositório
-## Extensões
-### Inclusão de Campos
-### Alteração de Tema
+1. API
+	1. Dicionário Funções 
+	2. Exemplos de Uso
+2. Programação
+3. Repositório
+4. Extensões
+	1. Inclusão de Campos
+	2. Alteração de Tema
