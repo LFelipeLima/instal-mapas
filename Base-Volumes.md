@@ -8,7 +8,7 @@ texto inicial
 3. [Manual do Desenvolvedor](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-do-desenvolvedor)
 
 ## Manual de Uso
-Texto de explicação de para quem se destina este manual
+Este manual é pensado em concentrar todos os documentos necessários para correto uso da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
 ### Usuário Final
 #### Acesso
@@ -37,9 +37,41 @@ Texto de explicação de para quem se destina este manual
 #### Registro de Usuário
 
 ## Manual do Administrador
-Texto de explicação de para quem se destina este manual
+Este manual é pensado em concentrar todos os documentos necessários para a administração da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
-## Administração
+## Instalação do Ambiente
+### [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
+### Ubuntu/Debian
+1. Deploy
+	* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
+	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
+2. Desevolvimento
+	* [Instalação Manual]
+	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-UBUNTU20.md)
+### Fedora/Centos
+1. Deploy
+	* [Instalação Manual]
+	* [Instalação com Docker]
+2. Desevolvimento
+	* [Instalação Manual]
+	* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
+## Migração de Servidor
+### Registros
+#### Exportação do BD
+#### Importação BD
+#### Uso de API
+### Temas
+#### Textos
+#### Imagens
+#### Cores
+
+## Perfil de Usuário
+### Super Administrador SaaS
+### Administrador SaaS
+### Administrador
+### Usuário
+
+## Administração do Ambiente
 ### Subsites
 #### Textos
 #### Imagens
@@ -60,38 +92,9 @@ Texto de explicação de para quem se destina este manual
 	* Regras Autenticação
 6. Captcha
 #### Aldir Blanc
-## Migração
-### Registros
-#### Exportação do BD
-#### Importação BD
-#### Uso de API
-### Temas
-#### Textos
-#### Imagens
-#### Cores
-## Instalação
-### Debian/Ubuntu
-#### Direto
-1. [Pacotes]()
-2. Serviços
-#### Docker
-1. Pacotes
-2. Serviços
-### Fedora/Centos
-#### Direto
-1. Pacotes
-2. Serviços
-#### Docker
-1. Pacotes
-2. Serviços
-## Perfil Usuário
-### Super Administrador SaaS
-### Administrador SaaS
-### Administrador
-### Usuário
 
 # Manual do Desenvolvedor
-Texto de explicação de para quem se destina este manual
+Este manual é pensado em concentrar todos os documentos necessários para o desenvolvimento/programação da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 ## API
 ### Dicionário Funções 
 ### Exemplos de Uso
