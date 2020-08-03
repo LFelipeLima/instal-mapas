@@ -4,7 +4,7 @@ Proposta de estruturação construída e pensada, via este [diagrama](https://gi
 
 **Índice do Documento:**
 1. [Manual de Uso](https://github.com/edsongs/instal-mapas#manual-de-uso)
-2. [Manual do Administrador](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-do-administrador)
+2. [Manual do Administrador](https://github.com/edsongs/instal-mapas#manual-do-administrador)
 3. [Manual do Desenvolvedor](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-do-desenvolvedor)
 
 ## Manual de Uso
