@@ -67,7 +67,7 @@ atualizaRef(){
 clonaRep(){
   sudo useradd -G www-data -d /srv/mapas -m mapas
   wait
-  sudo runuser -l mapas -c "git clone https://github.com/mapasculturais/mapasculturais.git"
+  sudo runuser -l mapas -c "git clone https://github.com/mapasculturais/mapasculturais-aldirblanc.git"
   wait
   sudo runuser -l mapas -c "cd mapasculturais"
   wait
