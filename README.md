@@ -55,7 +55,7 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 			* Instalação com Docker
 		2. Desevolvimento
 			* Instalação Manual
-			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/blob/master/draft/Desenvolvimento/Docker/Docker-FEDORA32.md)
 3. [Migração de Servidor](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy_migration.md)
 	1. Registros
 		1. Exportação do BD
