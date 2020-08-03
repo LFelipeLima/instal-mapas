@@ -40,7 +40,7 @@ Este manual é pensado em concentrar todos os documentos necessários para corre
 ## Manual do Administrador
 Este manual é pensado em concentrar todos os documentos necessários para a administração da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
-1. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/draft/Requisitos%20m%C3%ADnimos).
+1. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
 2. [Instalação do Ambiente](https://github.com/edsongs/instal-mapas/blob/master/Instalação.md)
 	1. Ubuntu/Debian
 		1. Deploy
