@@ -3,7 +3,7 @@
 Proposta de estruturação construída e pensada, via este [diagrama](https://github.com/edsongs/instal-mapas/blob/master/DocuDiag.pdf) de mind-mapping elaborado usando o GitMind.
 
 **Índice do Documento:**
-1. [Manual de Uso](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-de-uso)
+1. [Manual de Uso](https://github.com/edsongs/instal-mapas#manual-de-uso)
 2. [Manual do Administrador](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-do-administrador)
 3. [Manual do Desenvolvedor](https://github.com/edsongs/instal-mapas/blob/master/Base-Volumes.md#manual-do-desenvolvedor)
 
