@@ -211,6 +211,7 @@ deploy(){
 
 main(){
   clear
+ 
   echo "Iniciando instalação do Mapa Cultural...."
   echo "Digite seu domínio ou IP fixo (Ex: meu.dominio.gov.br ou 1.1.1.1): ";
   read DOMINIO;
